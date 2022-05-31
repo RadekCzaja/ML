@@ -1,3 +1,4 @@
+import os
 import numpy as np
 from imblearn.metrics import geometric_mean_score
 from scipy.stats import ttest_rel
@@ -12,6 +13,8 @@ from sklearn.model_selection import RepeatedStratifiedKFold
 from sklearn.svm import SVC
 from tabulate import tabulate
 from tqdm import tqdm
+from imblearn.over_sampling import RandomOverSampler
+import kbagging
 
 # Random state
 rng = 2137
@@ -20,25 +23,28 @@ rng = 2137
 
 random_forest = RandomForestClassifier(n_estimators=50, max_leaf_nodes=16, random_state=rng, n_jobs=-1)
 svm = SVC(random_state=rng)
-log = LogisticRegression(random_state=rng,solver='lbfgs', max_iter=1000)
+log = LogisticRegression(random_state=rng, solver='lbfgs', max_iter=1000)
 voting = VotingClassifier(
     estimators=[('logistics_regression', log), ('random_forest', random_forest), ('support_vector_machine', svm)],
     voting='hard')
 
 # klasyfikatory
-
 clfs = {
-   # 'random_forest': random_forest,
+    # 'random_forest': random_forest,
     'log': log,
     'svm': svm
-    }
+}
 
-def Test(dataset):
-    dataset = np.genfromtxt("%s.csv" % (dataset), delimiter=",", skip_header=37)
+ros = RandomOverSampler(random_state=rng)
+
+def Test(dataset_name):
+    dataset = np.genfromtxt("datasets/" + dataset_name + ".dat", delimiter=", ", skip_header=24)
     X = dataset[:, :-1]
     where_are_NaNs = np.isnan(X)
     X[where_are_NaNs] = 0
     y = dataset[:, -1].astype(int)
+    X, y = ros.fit_resample(X, y)
+
     print("Total number of features", X.shape[1])
 
     # Walidacja krzyżowa
@@ -52,7 +58,7 @@ def Test(dataset):
     f1 = np.zeros((len(clfs), n_splits * n_repeats))
     gmean = np.zeros((len(clfs), n_splits * n_repeats))
 
-    #BAGGING
+    # BAGGING
 
     for fold_id, (train, test) in tqdm(enumerate(rskf.split(X, y)), total=n_splits * n_repeats):
         for clf_id, clfs_name in enumerate(clfs):
@@ -65,11 +71,6 @@ def Test(dataset):
             recall[clf_id, fold_id] = recall_score(y[test], y_pred)
             f1[clf_id, fold_id] = f1_score(y[test], y_pred)
             gmean[clf_id, fold_id] = geometric_mean_score(y[test], y_pred)
-            print(gmean[clf_id, fold_id])
-            print('*****************')
-            print(y[test], y_pred)
-            print('*****************')
-            exit()
 
     mean = np.mean(gmean, axis=1)
     std = np.std(gmean, axis=1)
@@ -78,48 +79,71 @@ def Test(dataset):
     for clf_id, clf_name in enumerate(clfs):
         print("%s: %.3f (%.2f)" % (clf_name, mean[clf_id], std[clf_id]))
 
+    SaveResults(dataset_name, 'Bagging', acc_scores, error, precision, recall, f1, gmean)
+
+   # kbagging
+
+    for fold_id, (train, test) in tqdm(enumerate(rskf.split(X, y)), total=n_splits * n_repeats):
+        for clf_id, clfs_name in enumerate(clfs):
+            clf = clone(kbagging.BaggingClf(base_estimator=clfs[clfs_name], n_estimators=20, random_state=rng))
+            clf.fit(X[train], y[train])
+            y_pred = clf.predict(X[test])
+            acc_scores[clf_id, fold_id] = accuracy_score(y[test], y_pred)
+            error[clf_id, fold_id] = 1 - accuracy_score(y[test], y_pred)
+            precision[clf_id, fold_id] = average_precision_score(y[test], y_pred)
+            recall[clf_id, fold_id] = recall_score(y[test], y_pred)
+            f1[clf_id, fold_id] = f1_score(y[test], y_pred)
+            gmean[clf_id, fold_id] = geometric_mean_score(y[test], y_pred)
+
+    mean = np.mean(gmean, axis=1)
+    std = np.std(gmean, axis=1)
+
+    print('\n\nkbagging')
+    for clf_id, clf_name in enumerate(clfs):
+        print("%s: %.3f (%.2f)" % (clf_name, mean[clf_id], std[clf_id]))
+
+    SaveResults(dataset_name, 'kbagging', acc_scores, error, precision, recall, f1, gmean)
 
 
 
-    np.save('Bagging/accuracy_results', acc_scores)
-    np.save('Bagging/error_results', error)
-    np.save('Bagging/precision_results', precision)
-    np.save('Bagging/recall_results', recall)
-    np.save('Bagging/f1_results', f1)
-    np.save('Bagging/gmean_results', gmean)
+#     ADABOOST
+    for fold_id, (train, test) in tqdm(enumerate(rskf.split(X, y)), total=n_splits * n_repeats):
+        for clf_id, clfs_name in enumerate(clfs):
+            clf = clone(
+                AdaBoostClassifier(base_estimator=clfs[clfs_name], n_estimators=20, algorithm='SAMME', random_state=rng))
+            clf.fit(X[train], y[train])
+            y_pred = clf.predict(X[test])
+            acc_scores[clf_id, fold_id] = accuracy_score(y[test], y_pred)
+            error[clf_id, fold_id] = 1 - accuracy_score(y[test], y_pred)
+            precision[clf_id, fold_id] = average_precision_score(y[test], y_pred)
+            recall[clf_id, fold_id] = recall_score(y[test], y_pred)
+            f1[clf_id, fold_id] = f1_score(y[test], y_pred)
+            gmean[clf_id, fold_id] = geometric_mean_score(y[test], y_pred)
 
-    #ADABOOST
-    #
-    # for fold_id, (train, test) in tqdm(enumerate(rskf.split(X, y)), total=n_splits * n_repeats):
-    #     for clf_id, clfs_name in enumerate(clfs):
-    #         clf = clone(
-    #             AdaBoostClassifier(base_estimator=clfs[clfs_name], n_estimators=20, algorithm='SAMME', random_state=rng))
-    #         clf.fit(X[train], y[train])
-    #         y_pred = clf.predict(X[test])
-    #         acc_scores[clf_id, fold_id] = accuracy_score(y[test], y_pred)
-    #         error[clf_id, fold_id] = 1 - accuracy_score(y[test], y_pred)
-    #         precision[clf_id, fold_id] = average_precision_score(y[test], y_pred)
-    #         recall[clf_id, fold_id] = recall_score(y[test], y_pred)
-    #         f1[clf_id, fold_id] = f1_score(y[test], y_pred)
-    #         gmean[clf_id, fold_id] = geometric_mean_score(y[test], y_pred)
-    #
-    # mean = np.mean(acc_scores, axis=1)
-    # std = np.std(acc_scores, axis=1)
-    #
-    # print('\n\n*******')
-    # print('Adaboost')
-    # for clf_id, clf_name in enumerate(clfs):
-    #     print("%s: %.3f (%.2f)" % (clf_name, mean[clf_id], std[clf_id]))
-    #
-    # np.save('Adaboost/accuracy_results', acc_scores)
-    # np.save('Adaboost/error_results', error)
-    # np.save('Adaboost/precision_results', precision)
-    # np.save('Adaboost/recall_results', recall)
-    # np.save('Adaboost/f1_results', f1)
-    # np.save('Adaboost/gmean_results', gmean)
+    mean = np.mean(acc_scores, axis=1)
+    std = np.std(acc_scores, axis=1)
+
+    print('\n\n*******')
+    print('Adaboost')
+    for clf_id, clf_name in enumerate(clfs):
+        print("%s: %.3f (%.2f)" % (clf_name, mean[clf_id], std[clf_id]))
+
+    SaveResults(dataset_name, 'Adaboost', acc_scores, error, precision, recall, f1, gmean)
+
+
+
+def SaveResults(dataset_name, method, acc_scores, error, precision, recall, f1, gmean):
+    if not os.path.exists('results/%s/%s' % (method, dataset_name)):
+        os.makedirs('results/%s/%s' % (method, dataset_name))
+
+    np.save('results/%s/%s/%s' % (method, dataset_name, 'accuracy_results'),acc_scores)
+    np.save('results/%s/%s/%s' % (method, dataset_name, 'error_results'),error)
+    np.save('results/%s/%s/%s' % (method, dataset_name, 'precision_results'),precision)
+    np.save('results/%s/%s/%s' % (method, dataset_name, 'recall_results'),recall)
+    np.save('results/%s/%s/%s' % (method, dataset_name, 'f1_results'),f1)
+    np.save('results/%s/%s/%s' % (method, dataset_name, 'gmean_results'),gmean)
 
 def Statistics(path):
-
     scores = np.load(path + '/accuracy_results.npy')
     print(path + '/accuracy_results.npy')
     print("\nAccuracy scores:\n", scores.shape)
@@ -131,9 +155,8 @@ def Statistics(path):
             t_statistic[i, j], p_value[i, j] = ttest_rel(scores[i], scores[j])
     print("t-statistic:\n", t_statistic, "\n\np-value:\n", p_value)
 
-    headers = list(clfs.keys) # TU SĄ BŁEDY
-    names_column = np.expand_dims(np.array(list(clfs.keys())), axis=1) # I TU
-
+    headers = list(clfs.keys())  # TU SĄ BŁEDY
+    names_column = np.expand_dims(np.array(headers), axis=1)  # I TU
 
     t_statistic_table = np.concatenate((names_column, t_statistic), axis=1)
     t_statistic_table = tabulate(t_statistic_table, headers, floatfmt=".2f")
@@ -155,10 +178,11 @@ def Statistics(path):
     stat_better_table = tabulate(np.concatenate((names_column, stat_better), axis=1), headers)
     print("Statistically significantly better:\n", stat_better_table)
 
-#Is-this-a-good-customer << maly
-#Lending-Club-Loan-Data << duzy
-#Test('Is-this-a-good-customer')
-Statistics('Bagging')
-#Statistics('Adaboost')
 
-#keel es
+# Is-this-a-good-customer << maly
+# Lending-Club-Loan-Data << duzy
+Test("ecoli1")
+Statistics('results/Bagging/ecoli1')
+# Statistics('Adaboost')
+
+# keel es
