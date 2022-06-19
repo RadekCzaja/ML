@@ -1,4 +1,5 @@
 import numpy as np
+from imblearn.over_sampling import RandomOverSampler
 from sklearn import datasets
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import RepeatedStratifiedKFold
@@ -14,7 +15,10 @@ from sklearn.utils.validation import check_array, check_is_fitted, check_X_y
 
 #BASE_MODEL = DecisionTreeClassifier()
 #ENSAMBLE_SIZE = 5
+rng =2137
+ros = RandomOverSampler(random_state=rng)
 class BaggingClf(ClassifierMixin, BaseEstimator):
+
     def __init__(self, base_estimator, n_estimators, random_state ):
         self.clfs_ = None
         self.base_estimator = base_estimator
@@ -23,6 +27,7 @@ class BaggingClf(ClassifierMixin, BaseEstimator):
 
     def fit(self, X, y):
         self.clfs_ = []
+        X, y = ros.fit_resample(X, y)
         for i in range(self.n_estimators):
             clf = clone(self.base_estimator)
             bootstrap = np.random.choice(len(X), size=len(X), replace=True)
