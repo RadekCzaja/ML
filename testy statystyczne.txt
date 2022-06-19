@@ -1,0 +1,1524 @@
+ecoli1
+
+***** Statistics Bagging ecoli1 accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Bagging ecoli1 error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Bagging ecoli1 precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Bagging ecoli1 recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Bagging ecoli1 f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Bagging ecoli1 gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics kbagging ecoli1 accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics kbagging ecoli1 error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging ecoli1 precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics kbagging ecoli1 recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics kbagging ecoli1 f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics kbagging ecoli1 gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Adaboost ecoli1 accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost ecoli1 error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Adaboost ecoli1 precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost ecoli1 recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost ecoli1 f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost ecoli1 gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+ecoli2
+
+***** Statistics Bagging ecoli2 accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Bagging ecoli2 error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Bagging ecoli2 precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Bagging ecoli2 recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Bagging ecoli2 f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Bagging ecoli2 gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics kbagging ecoli2 accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics kbagging ecoli2 error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging ecoli2 precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics kbagging ecoli2 recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics kbagging ecoli2 f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics kbagging ecoli2 gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Adaboost ecoli2 accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost ecoli2 error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Adaboost ecoli2 precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost ecoli2 recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost ecoli2 f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost ecoli2 gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+ecoli3
+
+***** Statistics Bagging ecoli3 accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Bagging ecoli3 error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Bagging ecoli3 precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Bagging ecoli3 recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Bagging ecoli3 f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Bagging ecoli3 gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics kbagging ecoli3 accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics kbagging ecoli3 error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging ecoli3 precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics kbagging ecoli3 recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging ecoli3 f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics kbagging ecoli3 gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost ecoli3 accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost ecoli3 error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Adaboost ecoli3 precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost ecoli3 recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost ecoli3 f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost ecoli3 gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+glass0
+
+***** Statistics Bagging glass0 accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Bagging glass0 error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Bagging glass0 precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Bagging glass0 recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Bagging glass0 f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Bagging glass0 gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging glass0 accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging glass0 error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics kbagging glass0 precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging glass0 recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging glass0 f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging glass0 gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost glass0 accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost glass0 error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Adaboost glass0 precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost glass0 recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost glass0 f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost glass0 gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+glass1
+
+***** Statistics Bagging glass1 accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Bagging glass1 error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Bagging glass1 precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Bagging glass1 recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Bagging glass1 f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Bagging glass1 gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging glass1 accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging glass1 error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics kbagging glass1 precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging glass1 recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging glass1 f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging glass1 gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost glass1 accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost glass1 error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Adaboost glass1 precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost glass1 recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost glass1 f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost glass1 gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+glass6
+
+***** Statistics Bagging glass6 accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Bagging glass6 error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Bagging glass6 precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Bagging glass6 recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Bagging glass6 f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Bagging glass6 gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging glass6 accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging glass6 error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics kbagging glass6 precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging glass6 recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging glass6 f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging glass6 gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost glass6 accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost glass6 error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Adaboost glass6 precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost glass6 recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost glass6 f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost glass6 gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+haberman
+
+***** Statistics Bagging haberman accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Bagging haberman error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Bagging haberman precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Bagging haberman recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Bagging haberman f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Bagging haberman gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging haberman accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics kbagging haberman error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging haberman precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging haberman recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging haberman f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging haberman gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost haberman accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost haberman error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Adaboost haberman precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost haberman recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost haberman f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost haberman gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+iris0
+
+***** Statistics Bagging iris0 accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      0      0
+
+***** Statistics Bagging iris0 error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      0      0
+
+***** Statistics Bagging iris0 precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      0      0
+
+***** Statistics Bagging iris0 recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      0      0
+
+***** Statistics Bagging iris0 f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      0      0
+
+***** Statistics Bagging iris0 gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      0      0
+
+***** Statistics kbagging iris0 accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      0      0
+
+***** Statistics kbagging iris0 error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      0      0
+
+***** Statistics kbagging iris0 precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      0      0
+
+***** Statistics kbagging iris0 recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      0      0
+
+***** Statistics kbagging iris0 f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      0      0
+
+***** Statistics kbagging iris0 gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      0      0
+
+***** Statistics Adaboost iris0 accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost iris0 error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Adaboost iris0 precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost iris0 recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      0      0
+
+***** Statistics Adaboost iris0 f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost iris0 gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+new-thyroid1
+
+***** Statistics Bagging new-thyroid1 accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Bagging new-thyroid1 error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Bagging new-thyroid1 precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Bagging new-thyroid1 recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Bagging new-thyroid1 f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Bagging new-thyroid1 gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging new-thyroid1 accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging new-thyroid1 error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics kbagging new-thyroid1 precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging new-thyroid1 recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging new-thyroid1 f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging new-thyroid1 gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost new-thyroid1 accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost new-thyroid1 error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Adaboost new-thyroid1 precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost new-thyroid1 recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost new-thyroid1 f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost new-thyroid1 gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+newthyroid2
+
+***** Statistics Bagging newthyroid2 accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Bagging newthyroid2 error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Bagging newthyroid2 precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Bagging newthyroid2 recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Bagging newthyroid2 f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Bagging newthyroid2 gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging newthyroid2 accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging newthyroid2 error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics kbagging newthyroid2 precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging newthyroid2 recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging newthyroid2 f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging newthyroid2 gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost newthyroid2 accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost newthyroid2 error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Adaboost newthyroid2 precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost newthyroid2 recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost newthyroid2 f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost newthyroid2 gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+vehicle0
+
+***** Statistics Bagging vehicle0 accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Bagging vehicle0 error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Bagging vehicle0 precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Bagging vehicle0 recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Bagging vehicle0 f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Bagging vehicle0 gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging vehicle0 accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging vehicle0 error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics kbagging vehicle0 precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging vehicle0 recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics kbagging vehicle0 f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging vehicle0 gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost vehicle0 accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost vehicle0 error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Adaboost vehicle0 precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost vehicle0 recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost vehicle0 f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost vehicle0 gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+wisconsin
+
+***** Statistics Bagging wisconsin accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Bagging wisconsin error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Bagging wisconsin precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Bagging wisconsin recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Bagging wisconsin f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Bagging wisconsin gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics kbagging wisconsin accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics kbagging wisconsin error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics kbagging wisconsin precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics kbagging wisconsin recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics kbagging wisconsin f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics kbagging wisconsin gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Adaboost wisconsin accuracy_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost wisconsin error_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      0
+svm      1      0
+
+***** Statistics Adaboost wisconsin precision_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost wisconsin recall_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost wisconsin f1_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
+
+***** Statistics Adaboost wisconsin gmean_results *****
+Advantage:
+        log    svm
+---  -----  -----
+log      0      1
+svm      0      0
