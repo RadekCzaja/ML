@@ -1,0 +1,51 @@
+---------------
+PRECYZJA
+---------------
+Bagging ecoli1 F1 svm
+KBagging ecoli1 F1 svm          svm
+AdaBoost ecoli1 F1 log
+---------------
+Bagging ecoli2 F1 svm
+KBagging ecoli2 F1 svm          svm
+AdaBoost ecoli2 F1 log
+---------------
+Bagging ecoli3 F1 svm
+KBagging ecoli3 F1 svm          svm
+AdaBoost ecoli3 F1 log
+---------------
+Bagging glass0 F1 log
+KBagging glass0 F1 log
+AdaBoost glass0 F1 log
+---------------
+Bagging glass1 F1 log
+KBagging glass1 F1 log
+AdaBoost glass1 F1 log
+---------------
+Bagging glass6 F1 log
+KBagging glass6 F1 log
+AdaBoost glass6 F1 log
+---------------
+Bagging haberman F1 log
+KBagging haberman F1 log
+AdaBoost haberman F1 log
+---------------
+Bagging iris0 F1 0
+KBagging iris0 F1 0
+AdaBoost iris0 F1 log
+---------------
+Bagging new-thyroid1 F1 log
+KBagging new-thyroid1 F1 log
+AdaBoost new-thyroid1 F1 log
+---------------
+Bagging new-thyroid2 F1 log
+KBagging new-thyroid2 F1 log
+AdaBoost new-thyroid2 F1 log
+---------------
+Bagging vehicle0 F1 log
+KBagging vehicle0 F1 log
+AdaBoost vehicle0 F1 log
+---------------
+Bagging wisconsin F1 svm
+KBagging wisconsin F1 svm      svm
+AdaBoost wisconsin F1 log
+---------------

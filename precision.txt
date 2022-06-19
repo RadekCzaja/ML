@@ -1,0 +1,49 @@
+---------------
+PRECYZJA
+---------------
+Bagging ecoli1 precision svm
+KBagging ecoli1 precision svm          svm
+AdaBoost ecoli1 precision log
+---------------
+Bagging ecoli2 precision svm
+KBagging ecoli2 precision svm          svm
+AdaBoost ecoli2 precision log
+---------------
+Bagging ecoli3 precision svm
+KBagging ecoli3 precision svm          svm
+AdaBoost ecoli3 precision log
+---------------
+Bagging glass0 precision log
+KBagging glass0 precision log
+AdaBoost glass0 precision log
+---------------
+Bagging glass1 precision log
+KBagging glass1 precision log
+AdaBoost glass1 precision log
+---------------
+Bagging glass6 precision log
+KBagging glass6 precision log
+AdaBoost glass6 precision log
+---------------
+Bagging haberman precision log
+KBagging haberman precision log
+AdaBoost haberman precision log
+---------------
+iris 0 dla wszystkich
+---------------
+Bagging new-thyroid1 precision log
+KBagging new-thyroid1 precision log
+AdaBoost new-thyroid1 precision log
+---------------
+Bagging new-thyroid2 precision log
+KBagging new-thyroid2 precision log
+AdaBoost new-thyroid2 precision log
+---------------
+Bagging vehicle0 precision log
+KBagging vehicle0 precision log
+AdaBoost vehicle0 precision log
+---------------
+Bagging wisconsin precision svm
+KBagging wisconsin precision svm      svm
+AdaBoost wisconsin precision log
+---------------
