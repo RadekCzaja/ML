@@ -3,11 +3,11 @@ RECALL
 ----------------------
 
 Bagging ecoli1 recall svm
-kbagging ecoli1 recall svm
+kbagging ecoli1 recall svm             svm
 Adaboost ecoli1 recall log
 ------------ 
 Bagging ecoli2 recall svm
-kbagging ecoli2 recall svm
+kbagging ecoli2 recall svm             svm
 Adaboost ecoli2 recall log 
 ----------------
 Bagging ecoli3 recall svm 
@@ -45,7 +45,7 @@ kbagging vehicle0 recall svm
 Adaboost vehicle0 recall log
 -------------------
 Bagging wisconsin recall svm
-kbagging wisconsin recall svm
+kbagging wisconsin recall svm               svm
 Adaboost wisconsin recall log
 
                 Y.                      _   
