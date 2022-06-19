@@ -193,9 +193,9 @@ def Statistics(method_name, dataset_name):
                 names_column = np.expand_dims(np.array(headers), axis=1)
 
                 t_statistic_table = np.concatenate((names_column, t_statistic), axis=1)
-                t_statistic_table = tabulate(t_statistic_table, headers, floatfmt="latex")
+                t_statistic_table = tabulate(t_statistic_table, headers)
                 p_value_table = np.concatenate((names_column, p_value), axis=1)
-                p_value_table = tabulate(p_value_table, headers, floatfmt="latex")
+                p_value_table = tabulate(p_value_table, headers)
 
                 advantage = np.zeros((len(clfs), len(clfs)))
                 advantage[t_statistic > 0] = 1
